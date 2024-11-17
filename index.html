@@ -281,7 +281,7 @@ const MAX_SPEECH_TIME = 30000; // 30 giây
 
 async function loadLessonData(lessonNumber) {
     try {
-        const response = await fetch(`/data_speaking/${lessonNumber}.txt`);
+        const response = await fetch(`/data_speaking/B${lessonNumber}.txt`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
